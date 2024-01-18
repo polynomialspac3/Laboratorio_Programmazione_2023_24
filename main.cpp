@@ -2,7 +2,6 @@
 #include <QMainWindow>
 #include <QLabel>
 #include <iostream>
-
 #include "pulsante.h"
 
 
@@ -18,11 +17,11 @@ int main(int argc, char *argv[]) {
     finestra.setWindowTitle("Barra di Progresso");
     finestra.setFixedSize(600, 700);
     finestra.setStyleSheet(
-        "QMainWindow { }"
-        "QPushButton { }"
-        "QLabel { font-size: 17px; }"
+            "QMainWindow { }"
+            "QPushButton { }"
+            "QLabel { font-size: 17px; }"
     );
-    
+
     QLabel messaggio("Premi il pulsante per aggiornare lo stato del Subject <br>    e  vedere la barra di progresso caricarsi");
     messaggio.setParent(&finestra);
     messaggio.setGeometry(100, 10, 400, 60);
@@ -34,7 +33,7 @@ int main(int argc, char *argv[]) {
 
     pulsante *s1 = new pulsante();
     s1->setGeometry(180, 200, 180, 50);
-    s1->setText("Aggiorna il Subject1 "); 
+    s1->setText("Aggiorna il Subject1 ");
     s1->addObserver(b);
     s1->setParent(&finestra);
 
@@ -52,18 +51,18 @@ int main(int argc, char *argv[]) {
     b2->setParent(&finestra);
     b2->setGeometry(100, 400, 400, 30);
 
-    
+
     pulsante *s2 = new pulsante();
     s2->setGeometry(180, 500, 180, 50);
-    s2->setText("Aggiorna Subject 2"); 
+    s2->setText("Aggiorna Subject 2");
     s2->addObserver(b2);
     s2->setParent(&finestra);
 
- 
+
     int contatore = 0;
     int fastvalue = 0;
 
- QObject::connect(s1, &QPushButton::clicked, [s1, &contatore, &messaggio]() {
+    QObject::connect(s1, &QPushButton::clicked, [s1, &contatore, &messaggio]() {
         s1->carica(++contatore);
         if(contatore == 100){
             messaggio.setText("Hai completato il caricamento!");
@@ -71,7 +70,7 @@ int main(int argc, char *argv[]) {
         }
     });
 
-QObject::connect(s2, &QPushButton::clicked, [s2, &fastvalue, &messaggio1]() {
+    QObject::connect(s2, &QPushButton::clicked, [s2, &fastvalue, &messaggio1]() {
         fastvalue = ++fastvalue*2;
         s2->carica(fastvalue);
         if(fastvalue > 100){
@@ -86,10 +85,6 @@ QObject::connect(s2, &QPushButton::clicked, [s2, &fastvalue, &messaggio1]() {
 
 
 
-
-
-
-
     return a.exec();
-    
+
 }

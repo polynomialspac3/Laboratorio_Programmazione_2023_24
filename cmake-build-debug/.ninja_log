@@ -1,0 +1,6 @@
+# ninja log v5
+0	1299	1705609640296560359	CMakeFiles/Laboratorio.dir/barra.cpp.o	faa205ff6d086bb5
+1395	1615	1705609640611576604	Laboratorio	d62d872dd184a8a4
+0	36	1705610013294542524	build.ninja	9b492299ba5d460e
+1	1234	1705609640229556904	CMakeFiles/Laboratorio.dir/pulsante.cpp.o	93b1fe6954d43234
+0	1394	1705609640391565259	CMakeFiles/Laboratorio.dir/main.cpp.o	d826099f1c2872a1

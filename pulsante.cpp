@@ -15,5 +15,5 @@ void pulsante::notifyAll(int percentuale) {
 }
 
 void pulsante::carica(int i) {
-        notifyAll(i);
-    }
+    notifyAll(i);
+}
