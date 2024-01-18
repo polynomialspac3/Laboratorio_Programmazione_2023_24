@@ -10,7 +10,7 @@ Questo progetto illustra l'implementazione del pattern Observer utilizzando il f
 
 - `barra.h` e `barra.cpp`: Definiscono l'interfaccia e l'implementazione della classe `Observer`, che eredita dalla classe QProgressBar di QT.
 
-- `Subject.h` e `Subject.cpp`: Contengono la definizione e l'implementazione della classe `Subject`,che eredita dalla classe QPushButton di QT, in quanto per aggiornare i subject si necessita di un evento esterno.
+- `Subject.h` e `Subject.cpp`: Contengono la definizione e l'implementazione della classe `Subject`,che eredita dalla classe QPushButton di QT, in quanto per aggiornare i subject si utilizza di un evento esterno.
 
 - `main.cpp`: crea una finestra QMainWIndow, degli Observer: `b`, `b1`, `b2` , dei Subject: `s1`, `s2`.
     Al primo subject `s1`, assegno due observer `b` e `b1`. Ogni volta che il pulsante viene premuto attiva il metodo s1->carica(int) dalla lambda function di QT e aumenta un contatore che parte da 0. Il valore del contatore viene preso dalla lambda function e modificato al suo interno.
