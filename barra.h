@@ -1,15 +1,14 @@
 #ifndef BARRA_H
 #define BARRA_H
 
-#include <unistd.h>
-#include <iostream>
 #include <QProgressBar>
+#include <observer.h>
 
 
-class barra : public QProgressBar {
+class barra : public observer, public QProgressBar {
 public:
     barra();
-    void update(int percentuale);  
+    virtual void update(int percentuale) override; 
 };
 
 

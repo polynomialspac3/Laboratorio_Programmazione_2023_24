@@ -13,9 +13,9 @@ LDFLAGS = $(shell pkg-config --libs Qt5Widgets)
 OUTPUT_MAIN = main
 
 # Source files
-SRCS_MAIN = main.cpp Subject.cpp barra.cpp
+SRCS_MAIN = main.cpp pulsante.cpp barra.cpp
 # Header files
-HEADERS = Subject.h barra.h 
+HEADERS = subject.h barra.h pulsante.h observer.h
 
 # Object files
 OBJS_MAIN = $(SRCS_MAIN:.cpp=.o)

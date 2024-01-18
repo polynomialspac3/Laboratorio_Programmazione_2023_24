@@ -1,10 +1,10 @@
 #include <QApplication>
 #include <QMainWindow>
-#include "unistd.h"
-#include <QPushButton>
 #include <QLabel>
 #include <iostream>
-#include "Subject.h"
+
+#include "pulsante.h"
+
 
 
 
@@ -32,7 +32,7 @@ int main(int argc, char *argv[]) {
     b->setParent(&finestra);
     b->setGeometry(100, 120, 400, 30);
 
-    Subject *s1 = new Subject();
+    pulsante *s1 = new pulsante();
     s1->setGeometry(180, 200, 180, 50);
     s1->setText("Aggiorna il Subject1 "); 
     s1->addObserver(b);
@@ -53,7 +53,7 @@ int main(int argc, char *argv[]) {
     b2->setGeometry(100, 400, 400, 30);
 
     
-    Subject *s2 = new Subject();
+    pulsante *s2 = new pulsante();
     s2->setGeometry(180, 500, 180, 50);
     s2->setText("Aggiorna Subject 2"); 
     s2->addObserver(b2);
