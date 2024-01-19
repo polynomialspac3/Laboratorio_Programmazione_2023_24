@@ -18,7 +18,12 @@ public:
     pulsante();
     void addObserver(observer* o) override;
     void notifyAll(int percentuale) override;
-    void carica(int i); // cambio di stato del subject
+    void carica(int i); // cambio di stato che l'interfaccia del subject non ha
+
+
+    //metodi per il testing
+    int getSize();
+    observer* getObserver(int i);
 };
 
 

@@ -7,7 +7,7 @@ include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
 
 
-add_executable(RunallTests Test.cpp
+add_executable(RunallTests Testclassi.cpp
         )
 
 target_link_libraries(RunallTests core gtest gtest_main)

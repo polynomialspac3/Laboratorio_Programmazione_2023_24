@@ -218,9 +218,9 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 build cmake_object_order_depends_target_RunallTests: phony || cmake_object_order_depends_target_core cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
-build test/CMakeFiles/RunallTests.dir/Test.cpp.o: CXX_COMPILER__RunallTests_unscanned_Debug /home/polonord/CLionProjects/Laboratorio/test/Test.cpp || cmake_object_order_depends_target_RunallTests
+build test/CMakeFiles/RunallTests.dir/Testclassi.cpp.o: CXX_COMPILER__RunallTests_unscanned_Debug /home/polonord/CLionProjects/Laboratorio/test/Testclassi.cpp || cmake_object_order_depends_target_RunallTests
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = test/CMakeFiles/RunallTests.dir/Test.cpp.o.d
+  DEP_FILE = test/CMakeFiles/RunallTests.dir/Testclassi.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always -fPIC
   INCLUDES = -isystem /home/polonord/CLionProjects/Laboratorio/test/lib/googletest/include -isystem /home/polonord/CLionProjects/Laboratorio/test/lib/googletest -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++
   OBJECT_DIR = test/CMakeFiles/RunallTests.dir
@@ -234,7 +234,7 @@ build test/CMakeFiles/RunallTests.dir/Test.cpp.o: CXX_COMPILER__RunallTests_unsc
 #############################################
 # Link the executable test/RunallTests
 
-build test/RunallTests: CXX_EXECUTABLE_LINKER__RunallTests_Debug test/CMakeFiles/RunallTests.dir/Test.cpp.o | libcore.a lib/libgtest.a lib/libgtest_main.a /usr/lib/libQt5Widgets.so.5.15.12 /usr/lib/libQt5Gui.so.5.15.12 /usr/lib/libQt5Core.so.5.15.12 lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libcore.a
+build test/RunallTests: CXX_EXECUTABLE_LINKER__RunallTests_Debug test/CMakeFiles/RunallTests.dir/Testclassi.cpp.o | libcore.a lib/libgtest.a lib/libgtest_main.a /usr/lib/libQt5Widgets.so.5.15.12 /usr/lib/libQt5Gui.so.5.15.12 /usr/lib/libQt5Core.so.5.15.12 lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libcore.a
   FLAGS = -g
   LINK_LIBRARIES = libcore.a  lib/libgtest.a  lib/libgtest_main.a  /usr/lib/libQt5Widgets.so.5.15.12  /usr/lib/libQt5Gui.so.5.15.12  /usr/lib/libQt5Core.so.5.15.12  lib/libgtest.a
   OBJECT_DIR = test/CMakeFiles/RunallTests.dir

@@ -1,0 +1,165 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2
+					]
+				},
+				{
+					"build" : "test",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-test-Debug-451c0598f41488bb20b9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "test/lib/googletest",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-test.lib.googletest-Debug-3bbe780a3505074a1134.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "test/lib/googletest",
+					"targetIndexes" : 
+					[
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Laboratorio",
+					"targetIndexes" : 
+					[
+						0,
+						2
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "test",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "gtest",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Laboratorio::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Laboratorio-Debug-e93600affd3bf96c861b.json",
+					"name" : "Laboratorio",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "RunallTests::@36f028580bb02cc8272a",
+					"jsonFile" : "target-RunallTests-Debug-6e197f1e26d5ad80cb97.json",
+					"name" : "RunallTests",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "core::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-core-Debug-6f276bfd6963b9b97624.json",
+					"name" : "core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "gtest::@838963ba4e42fda1c95a",
+					"jsonFile" : "target-gtest-Debug-68750981daf5c2adbe3a.json",
+					"name" : "gtest",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "gtest_main::@838963ba4e42fda1c95a",
+					"jsonFile" : "target-gtest_main-Debug-4c395114643fa43e2d57.json",
+					"name" : "gtest_main",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/polonord/CLionProjects/Laboratorio/cmake-build-debug",
+		"source" : "/home/polonord/CLionProjects/Laboratorio"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
