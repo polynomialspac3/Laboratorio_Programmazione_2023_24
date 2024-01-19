@@ -14,8 +14,20 @@ add_executable(Laboratorio main.cpp
         pulsante.cpp
         pulsante.h
         subject.h
-        test/pulsanteTest.cpp
 )
 
 
 target_link_libraries(Laboratorio PRIVATE Qt5::Widgets)
+
+add_library(core Laboratorio main.cpp
+        barra.cpp
+        barra.h
+        observer.h
+        pulsante.cpp
+        pulsante.h
+        subject.h)
+
+target_link_libraries(core Qt5::Widgets)
+
+
+add_subdirectory(test)

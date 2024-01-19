@@ -12,7 +12,6 @@
 class pulsante : public subject, public QPushButton  {
 
 private:
-    int percentuale;
     std::vector<observer*> observers;
 
 public:

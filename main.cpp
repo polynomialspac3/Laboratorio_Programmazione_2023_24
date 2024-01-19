@@ -3,7 +3,7 @@
 #include <QLabel>
 #include <iostream>
 #include "pulsante.h"
-
+using namespace std;
 
 
 

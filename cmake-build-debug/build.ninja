@@ -73,14 +73,6 @@ build CMakeFiles/Laboratorio.dir/pulsante.cpp.o: CXX_COMPILER__Laboratorio_unsca
   OBJECT_DIR = CMakeFiles/Laboratorio.dir
   OBJECT_FILE_DIR = CMakeFiles/Laboratorio.dir
 
-build CMakeFiles/Laboratorio.dir/test/lib/pulsateTest.cpp.o: CXX_COMPILER__Laboratorio_unscanned_Debug /home/polonord/CLionProjects/Laboratorio/test/lib/pulsateTest.cpp || cmake_object_order_depends_target_Laboratorio
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/Laboratorio.dir/test/lib/pulsateTest.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -fPIC
-  INCLUDES = -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++
-  OBJECT_DIR = CMakeFiles/Laboratorio.dir
-  OBJECT_FILE_DIR = CMakeFiles/Laboratorio.dir/test/lib
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Laboratorio
@@ -89,7 +81,7 @@ build CMakeFiles/Laboratorio.dir/test/lib/pulsateTest.cpp.o: CXX_COMPILER__Labor
 #############################################
 # Link the executable Laboratorio
 
-build Laboratorio: CXX_EXECUTABLE_LINKER__Laboratorio_Debug CMakeFiles/Laboratorio.dir/main.cpp.o CMakeFiles/Laboratorio.dir/barra.cpp.o CMakeFiles/Laboratorio.dir/pulsante.cpp.o CMakeFiles/Laboratorio.dir/test/lib/pulsateTest.cpp.o | /usr/lib/libQt5Widgets.so.5.15.12 /usr/lib/libQt5Gui.so.5.15.12 /usr/lib/libQt5Core.so.5.15.12
+build Laboratorio: CXX_EXECUTABLE_LINKER__Laboratorio_Debug CMakeFiles/Laboratorio.dir/main.cpp.o CMakeFiles/Laboratorio.dir/barra.cpp.o CMakeFiles/Laboratorio.dir/pulsante.cpp.o | /usr/lib/libQt5Widgets.so.5.15.12 /usr/lib/libQt5Gui.so.5.15.12 /usr/lib/libQt5Core.so.5.15.12
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/libQt5Widgets.so.5.15.12  /usr/lib/libQt5Gui.so.5.15.12  /usr/lib/libQt5Core.so.5.15.12
   OBJECT_DIR = CMakeFiles/Laboratorio.dir
@@ -97,6 +89,55 @@ build Laboratorio: CXX_EXECUTABLE_LINKER__Laboratorio_Debug CMakeFiles/Laborator
   PRE_LINK = :
   TARGET_FILE = Laboratorio
   TARGET_PDB = Laboratorio.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target core
+
+
+#############################################
+# Order-only phony target for core
+
+build cmake_object_order_depends_target_core: phony || CMakeFiles/core.dir
+
+build CMakeFiles/core.dir/main.cpp.o: CXX_COMPILER__core_unscanned_Debug /home/polonord/CLionProjects/Laboratorio/main.cpp || cmake_object_order_depends_target_core
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/core.dir/main.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -fPIC
+  INCLUDES = -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++
+  OBJECT_DIR = CMakeFiles/core.dir
+  OBJECT_FILE_DIR = CMakeFiles/core.dir
+
+build CMakeFiles/core.dir/barra.cpp.o: CXX_COMPILER__core_unscanned_Debug /home/polonord/CLionProjects/Laboratorio/barra.cpp || cmake_object_order_depends_target_core
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/core.dir/barra.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -fPIC
+  INCLUDES = -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++
+  OBJECT_DIR = CMakeFiles/core.dir
+  OBJECT_FILE_DIR = CMakeFiles/core.dir
+
+build CMakeFiles/core.dir/pulsante.cpp.o: CXX_COMPILER__core_unscanned_Debug /home/polonord/CLionProjects/Laboratorio/pulsante.cpp || cmake_object_order_depends_target_core
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/core.dir/pulsante.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -fPIC
+  INCLUDES = -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++
+  OBJECT_DIR = CMakeFiles/core.dir
+  OBJECT_FILE_DIR = CMakeFiles/core.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target core
+
+
+#############################################
+# Link the static library libcore.a
+
+build libcore.a: CXX_STATIC_LIBRARY_LINKER__core_Debug CMakeFiles/core.dir/main.cpp.o CMakeFiles/core.dir/barra.cpp.o CMakeFiles/core.dir/pulsante.cpp.o || /usr/lib/libQt5Widgets.so.5.15.12 /usr/lib/libQt5Gui.so.5.15.12 /usr/lib/libQt5Core.so.5.15.12
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/core.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libcore.a
+  TARGET_PDB = core.a.dbg
 
 
 #############################################
@@ -121,8 +162,300 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /home/polonord/CLionProjects/Laboratorio/cmake-build-debug && /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /home/polonord/CLionProjects/Laboratorio/cmake-build-debug && /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /home/polonord/CLionProjects/Laboratorio/cmake-build-debug && /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/polonord/CLionProjects/Laboratorio/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target RunallTests
+
+
+#############################################
+# Order-only phony target for RunallTests
+
+build cmake_object_order_depends_target_RunallTests: phony || cmake_object_order_depends_target_core cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build test/CMakeFiles/RunallTests.dir/Test.cpp.o: CXX_COMPILER__RunallTests_unscanned_Debug /home/polonord/CLionProjects/Laboratorio/test/Test.cpp || cmake_object_order_depends_target_RunallTests
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = test/CMakeFiles/RunallTests.dir/Test.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -fPIC
+  INCLUDES = -isystem /home/polonord/CLionProjects/Laboratorio/test/lib/googletest/include -isystem /home/polonord/CLionProjects/Laboratorio/test/lib/googletest -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++
+  OBJECT_DIR = test/CMakeFiles/RunallTests.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/RunallTests.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target RunallTests
+
+
+#############################################
+# Link the executable test/RunallTests
+
+build test/RunallTests: CXX_EXECUTABLE_LINKER__RunallTests_Debug test/CMakeFiles/RunallTests.dir/Test.cpp.o | libcore.a lib/libgtest.a lib/libgtest_main.a /usr/lib/libQt5Widgets.so.5.15.12 /usr/lib/libQt5Gui.so.5.15.12 /usr/lib/libQt5Core.so.5.15.12 lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libcore.a
+  FLAGS = -g
+  LINK_LIBRARIES = libcore.a  lib/libgtest.a  lib/libgtest_main.a  /usr/lib/libQt5Widgets.so.5.15.12  /usr/lib/libQt5Gui.so.5.15.12  /usr/lib/libQt5Core.so.5.15.12  lib/libgtest.a
+  OBJECT_DIR = test/CMakeFiles/RunallTests.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test/RunallTests
+  TARGET_PDB = RunallTests.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/polonord/CLionProjects/Laboratorio/cmake-build-debug/test && /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build test/edit_cache: phony test/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/polonord/CLionProjects/Laboratorio/cmake-build-debug/test && /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/polonord/CLionProjects/Laboratorio -B/home/polonord/CLionProjects/Laboratorio/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/rebuild_cache: phony test/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build test/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build test/CMakeFiles/install.util: CUSTOM_COMMAND test/all
+  COMMAND = cd /home/polonord/CLionProjects/Laboratorio/cmake-build-debug/test && /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build test/install: phony test/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build test/CMakeFiles/install/local.util: CUSTOM_COMMAND test/all
+  COMMAND = cd /home/polonord/CLionProjects/Laboratorio/cmake-build-debug/test && /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build test/install/local: phony test/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build test/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/all
+  COMMAND = cd /home/polonord/CLionProjects/Laboratorio/cmake-build-debug/test && /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build test/install/strip: phony test/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/polonord/CLionProjects/Laboratorio/test/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Order-only phony target for gtest
+
+build cmake_object_order_depends_target_gtest: phony || test/lib/googletest/CMakeFiles/gtest.dir
+
+build test/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILER__gtest_unscanned_Debug /home/polonord/CLionProjects/Laboratorio/test/lib/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+  DEP_FILE = test/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -I/home/polonord/CLionProjects/Laboratorio/test/lib/googletest/include -I/home/polonord/CLionProjects/Laboratorio/test/lib/googletest
+  OBJECT_DIR = test/lib/googletest/CMakeFiles/gtest.dir
+  OBJECT_FILE_DIR = test/lib/googletest/CMakeFiles/gtest.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Link the static library lib/libgtest.a
+
+build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug test/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = test/lib/googletest/CMakeFiles/gtest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgtest.a
+  TARGET_PDB = gtest.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Order-only phony target for gtest_main
+
+build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
+
+build test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_COMPILER__gtest_main_unscanned_Debug /home/polonord/CLionProjects/Laboratorio/test/lib/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+  DEP_FILE = test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -isystem /home/polonord/CLionProjects/Laboratorio/test/lib/googletest/include -isystem /home/polonord/CLionProjects/Laboratorio/test/lib/googletest
+  OBJECT_DIR = test/lib/googletest/CMakeFiles/gtest_main.dir
+  OBJECT_FILE_DIR = test/lib/googletest/CMakeFiles/gtest_main.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Link the static library lib/libgtest_main.a
+
+build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o || lib/libgtest.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = test/lib/googletest/CMakeFiles/gtest_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgtest_main.a
+  TARGET_PDB = gtest_main.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/lib/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/polonord/CLionProjects/Laboratorio/cmake-build-debug/test/lib/googletest && /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build test/lib/googletest/edit_cache: phony test/lib/googletest/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/lib/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/polonord/CLionProjects/Laboratorio/cmake-build-debug/test/lib/googletest && /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/polonord/CLionProjects/Laboratorio -B/home/polonord/CLionProjects/Laboratorio/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/lib/googletest/rebuild_cache: phony test/lib/googletest/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build test/lib/googletest/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build test/lib/googletest/CMakeFiles/install.util: CUSTOM_COMMAND test/lib/googletest/all
+  COMMAND = cd /home/polonord/CLionProjects/Laboratorio/cmake-build-debug/test/lib/googletest && /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build test/lib/googletest/install: phony test/lib/googletest/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build test/lib/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND test/lib/googletest/all
+  COMMAND = cd /home/polonord/CLionProjects/Laboratorio/cmake-build-debug/test/lib/googletest && /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build test/lib/googletest/install/local: phony test/lib/googletest/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build test/lib/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/lib/googletest/all
+  COMMAND = cd /home/polonord/CLionProjects/Laboratorio/cmake-build-debug/test/lib/googletest && /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build test/lib/googletest/install/strip: phony test/lib/googletest/CMakeFiles/install/strip.util
+
 # =============================================================================
 # Target aliases.
+
+build RunallTests: phony test/RunallTests
+
+build core: phony libcore.a
+
+build gtest: phony lib/libgtest.a
+
+build gtest_main: phony lib/libgtest_main.a
+
+build libgtest.a: phony lib/libgtest.a
+
+build libgtest_main.a: phony lib/libgtest_main.a
 
 # =============================================================================
 # Folder targets.
@@ -132,7 +465,21 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/polonord/CLionProjects/Laboratorio/cmake-build-debug
 
-build all: phony Laboratorio
+build all: phony Laboratorio libcore.a test/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/polonord/CLionProjects/Laboratorio/cmake-build-debug/test
+
+build test/all: phony test/RunallTests test/lib/googletest/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/polonord/CLionProjects/Laboratorio/cmake-build-debug/test/lib/googletest
+
+build test/lib/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 
 # =============================================================================
 # Built-in targets
@@ -141,14 +488,14 @@ build all: phony Laboratorio
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeParseArguments.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU-C.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /home/polonord/CLionProjects/Laboratorio/CMakeLists.txt /usr/lib/cmake/Qt5Core/Qt5CoreConfig.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake /usr/lib/cmake/Qt5Core/Qt5CoreMacros.cmake /usr/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake /usr/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake /usr/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QGtk3ThemePlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QJp2Plugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QMngPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QPdfPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QTsLibPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandEglPlatformIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandXCompositeEglPlatformIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandXCompositeGlxPlatformIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake /usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake /usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake /usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake /usr/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeParseArguments.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPython.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPython/Support.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindThreads.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU-C.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake /home/polonord/CLionProjects/Laboratorio/CMakeLists.txt /home/polonord/CLionProjects/Laboratorio/test/CMakeLists.txt /home/polonord/CLionProjects/Laboratorio/test/lib/googletest/CMakeLists.txt /home/polonord/CLionProjects/Laboratorio/test/lib/googletest/cmake/Config.cmake.in /home/polonord/CLionProjects/Laboratorio/test/lib/googletest/cmake/gtest.pc.in /home/polonord/CLionProjects/Laboratorio/test/lib/googletest/cmake/gtest_main.pc.in /home/polonord/CLionProjects/Laboratorio/test/lib/googletest/cmake/internal_utils.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfig.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake /usr/lib/cmake/Qt5Core/Qt5CoreMacros.cmake /usr/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake /usr/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake /usr/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QGtk3ThemePlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QJp2Plugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QMngPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QPdfPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QTsLibPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandEglPlatformIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandXCompositeEglPlatformIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandXCompositeGlxPlatformIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake /usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake /usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake /usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake /usr/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeParseArguments.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU-C.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /home/polonord/CLionProjects/Laboratorio/CMakeLists.txt /usr/lib/cmake/Qt5Core/Qt5CoreConfig.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake /usr/lib/cmake/Qt5Core/Qt5CoreMacros.cmake /usr/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake /usr/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake /usr/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QGtk3ThemePlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QJp2Plugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QMngPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QPdfPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QTsLibPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandEglPlatformIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandXCompositeEglPlatformIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandXCompositeGlxPlatformIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake /usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake /usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake /usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake /usr/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
+build /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeParseArguments.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPython.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPython/Support.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindThreads.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU-C.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /home/polonord/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake /home/polonord/CLionProjects/Laboratorio/CMakeLists.txt /home/polonord/CLionProjects/Laboratorio/test/CMakeLists.txt /home/polonord/CLionProjects/Laboratorio/test/lib/googletest/CMakeLists.txt /home/polonord/CLionProjects/Laboratorio/test/lib/googletest/cmake/Config.cmake.in /home/polonord/CLionProjects/Laboratorio/test/lib/googletest/cmake/gtest.pc.in /home/polonord/CLionProjects/Laboratorio/test/lib/googletest/cmake/gtest_main.pc.in /home/polonord/CLionProjects/Laboratorio/test/lib/googletest/cmake/internal_utils.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfig.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake /usr/lib/cmake/Qt5Core/Qt5CoreMacros.cmake /usr/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake /usr/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake /usr/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QGtk3ThemePlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QJp2Plugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QMngPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QPdfPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QTsLibPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandEglPlatformIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandXCompositeEglPlatformIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandXCompositeGlxPlatformIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake /usr/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake /usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake /usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake /usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake /usr/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
 
 
 #############################################

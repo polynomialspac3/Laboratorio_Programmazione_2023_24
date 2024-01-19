@@ -9,6 +9,10 @@ class barra : public observer, public QProgressBar {
 public:
     barra();
     virtual void update(int percentuale) override;
+    virtual int getPerc();
+
+private:
+    int percentuale;
 };
 
 #endif

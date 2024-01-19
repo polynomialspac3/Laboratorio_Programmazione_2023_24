@@ -6,5 +6,11 @@ barra::barra() : QProgressBar() {
 }
 
 void barra::update(int percentuale) {
+    this->percentuale = percentuale;
     setValue(percentuale);
 }
+
+int barra::getPerc() {
+    return percentuale;
+}
+
